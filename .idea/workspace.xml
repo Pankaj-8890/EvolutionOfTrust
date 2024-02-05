@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f583892f-11d2-4307-ae63-dc505132e951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CheatPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CooperatePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyCatPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CopyCatPlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TrustMachineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EvolutionOfTrust.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EvolutionOfTrustTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyKittenPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CopyKittenPlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="5b569e5e14d0c5f4e8f18d9168cbb2287d5f3a39" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -55,17 +51,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "5b569e5e",
+    "git-widget-placeholder": "10fe7163",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/pankaj.kumar09_ftc/IdeaProjects/EvolutionOfTrust/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CopyCatPlayerTest">
-    <configuration name="CopyCatPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer">
+    <configuration name="CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CopyCatPlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CopyKittenPlayerTest" />
+      <option name="METHOD_NAME" value="copycatPlayerSecondMoveWithCooperatePlayer" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CopyCatPlayerTest" />
-        <item itemvalue="JUnit.TrustMachineTest" />
+        <item itemvalue="JUnit.CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer" />
+        <item itemvalue="JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer" />
         <item itemvalue="JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer" />
         <item itemvalue="JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer" />
-        <item itemvalue="JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer" />
+        <item itemvalue="JUnit.TrustMachineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +125,19 @@
       <option name="presentableId" value="Default" />
       <updated>1707107654276</updated>
     </task>
+    <task id="LOCAL-00001" summary="implemented CopyCatPlayer">
+      <option name="closed" value="true" />
+      <created>1707150598717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707150598717</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implemented CopyCatPlayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented CopyCatPlayer" />
   </component>
 </project>
