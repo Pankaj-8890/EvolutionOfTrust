@@ -1,14 +1,18 @@
 package org.example;
 
-public class Player {
+import java.util.Random;
 
-    private final int score = 0;
+public class Player{
+    public Action takeAction(){
+        Random random = new Random();
+        return random.nextInt(2) == 0 ? Action.CHEAT : Action.COOPERATE;
+    }
 
-    public Player(){
+    public void gain(){
 
     }
 
+    public void invest(){
 
-
-
+    }
 }

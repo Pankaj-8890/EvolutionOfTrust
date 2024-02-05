@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f583892f-11d2-4307-ae63-dc505132e951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Behaviour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EvolutionOfTrust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EvolutionOfTrustTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CheatPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CooperatePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyCatPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CopyCatPlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TrustMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EvolutionOfTrust.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EvolutionOfTrustTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2bvu0njk0abInJ8rXiQIe5Of8an" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,51 +44,66 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CopyCatPlayerTest.executor": "Run",
     "JUnit.EvolutionOfTrustTest.TestGameWhenFirstPlayerCooperateAndSecondPlayerCheat.executor": "Run",
     "JUnit.PlayerTest.TestPlayerIsCreated.executor": "Run",
     "JUnit.PlayerTest.executor": "Run",
+    "JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer.executor": "Run",
+    "JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer.executor": "Run",
+    "JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer.executor": "Run",
+    "JUnit.TrustMachineTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "5b569e5e",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/pankaj.kumar09_ftc/IdeaProjects/EvolutionOfTrust/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.EvolutionOfTrustTest">
-    <configuration name="EvolutionOfTrustTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CopyCatPlayerTest">
+    <configuration name="CopyCatPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EvolutionOfTrustTest" />
+      <option name="MAIN_CLASS_NAME" value="CopyCatPlayerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvolutionOfTrustTest.TestGameWhenFirstPlayerCooperateAndSecondPlayerCheat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrustMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EvolutionOfTrustTest" />
-      <option name="METHOD_NAME" value="TestGameWhenFirstPlayerCooperateAndSecondPlayerCheat" />
+      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionOfTrust" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
+      <option name="METHOD_NAME" value="TestWhenCheatPlayerMatchWithCheatPlayer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
+      <option name="METHOD_NAME" value="TestWhenCheatPlayerMatchWithCooperatePlayer" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.TestPlayerIsCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
-      <option name="METHOD_NAME" value="TestPlayerIsCreated" />
+      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
+      <option name="METHOD_NAME" value="TestWhenCooperatePlayerMatchWithCheatPlayer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,10 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EvolutionOfTrustTest" />
-        <item itemvalue="JUnit.EvolutionOfTrustTest.TestGameWhenFirstPlayerCooperateAndSecondPlayerCheat" />
-        <item itemvalue="JUnit.PlayerTest" />
-        <item itemvalue="JUnit.PlayerTest.TestPlayerIsCreated" />
+        <item itemvalue="JUnit.CopyCatPlayerTest" />
+        <item itemvalue="JUnit.TrustMachineTest" />
+        <item itemvalue="JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer" />
+        <item itemvalue="JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer" />
+        <item itemvalue="JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer" />
       </list>
     </recent_temporary>
   </component>

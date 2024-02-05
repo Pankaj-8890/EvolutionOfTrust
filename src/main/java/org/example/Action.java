@@ -1,6 +1,6 @@
 package org.example;
 
-public enum Behaviour {
+public enum Action {
 
     COOPERATE,
     CHEAT
