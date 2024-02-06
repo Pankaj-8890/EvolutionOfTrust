@@ -1,20 +1,23 @@
 package org.example;
 
+import java.awt.*;
+
 public class CopyKittenPlayer extends Player {
 
-    private boolean investLastRound = false;
+    private boolean gainedLastRound = true;
+
     @Override
     public Action takeAction(){
-        Action action = Action.COOPERATE;
-        if(investLastRound){
-            action = Action.CHEAT;
-        }
-        investLastRound = false;
+        Action action = Action.CHEAT;
+        if(gainedLastRound)
+            action = Action.COOPERATE;
+        this.gainedLastRound = false;
         return action;
     }
 
     @Override
-    public void invest(){
-        this.investLastRound = true;
+    public void gain() {
+        this.gainedLastRound = true;
+        super.gain();
     }
 }

@@ -17,6 +17,7 @@ public class CopyCatPlayer extends Player{
     @Override
     public void gain(){
         this.gainLastRound = true;
+        super.gain();
     }
 
 }

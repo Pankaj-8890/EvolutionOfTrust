@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f583892f-11d2-4307-ae63-dc505132e951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyKittenPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CopyKittenPlayerTest.java" afterDir="false" />
+    <list default="true" id="f583892f-11d2-4307-ae63-dc505132e951" name="Changes" comment="implemented CopyKittenPlayer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DetectivePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GrudgePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CopeKittenPlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DetectivePlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GrudgePlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CopyCatPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyCatPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CopyKittenPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyKittenPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CopyCatPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CopyCatPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CopyKittenPlayerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TrustMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TrustMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,67 +50,86 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CopeKittenPlayerTest.executor": "Run",
+    "JUnit.CopyCatPlayerTest.TestCopyCatPlayerActionChangeWhenLastGainisTrue.executor": "Run",
+    "JUnit.CopyCatPlayerTest.TestCopyCatPlayerActionChangeWhenLastInvestisTrue.executor": "Run",
+    "JUnit.CopyCatPlayerTest.TestCopyCatPlayerIsCreated.executor": "Run",
     "JUnit.CopyCatPlayerTest.executor": "Run",
+    "JUnit.CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer.executor": "Run",
+    "JUnit.DetactivePlayerTest.detectivePlayerInitialMove.executor": "Run",
+    "JUnit.DetactivePlayerTest.detectivePlayerSecondMove.executor": "Run",
+    "JUnit.DetactivePlayerTest.xyz.executor": "Run",
+    "JUnit.DetactivePlayerTest.xyzxz.executor": "Run",
+    "JUnit.DetactivePlayerTest.xyzxz1.executor": "Run",
+    "JUnit.DetectivePlayerTest.executor": "Run",
     "JUnit.EvolutionOfTrustTest.TestGameWhenFirstPlayerCooperateAndSecondPlayerCheat.executor": "Run",
+    "JUnit.GrudgePlayerTest.expectCooperateAsChoiceAfterOneGainAndInvest.executor": "Run",
     "JUnit.PlayerTest.TestPlayerIsCreated.executor": "Run",
     "JUnit.PlayerTest.executor": "Run",
     "JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer.executor": "Run",
+    "JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayerin2Rounds.executor": "Run",
     "JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer.executor": "Run",
     "JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer.executor": "Run",
+    "JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCooperatePlayer.executor": "Run",
+    "JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCooperatePlayerin2Rounds.executor": "Run",
+    "JUnit.TrustMachineTest.TestWinnerWhenCopycatPlayerMatchWithCooperatePlayerInFirstRound.executor": "Run",
+    "JUnit.TrustMachineTest.TestWinnerWhenCopycatPlayerMatchWithCooperatePlayerInSecondRound.executor": "Debug",
+    "JUnit.TrustMachineTest.copycatPlayerSecondMoveWithCooperatePlayer.executor": "Run",
+    "JUnit.TrustMachineTest.copycatPlayerSecondMoveWithCooperatePlayerInRound2.executor": "Run",
     "JUnit.TrustMachineTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "10fe7163",
+    "git-widget-placeholder": "04f871bc",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/pankaj.kumar09_ftc/IdeaProjects/EvolutionOfTrust/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer">
-    <configuration name="CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DetectivePlayerTest">
+    <configuration name="DetectivePlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CopyKittenPlayerTest" />
-      <option name="METHOD_NAME" value="copycatPlayerSecondMoveWithCooperatePlayer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrustMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionOfTrust" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
+      <option name="MAIN_CLASS_NAME" value="DetectivePlayerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DetectivePlayerTest.detectivePlayerSecondMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
-      <option name="METHOD_NAME" value="TestWhenCheatPlayerMatchWithCheatPlayer" />
+      <option name="MAIN_CLASS_NAME" value="DetectivePlayerTest" />
+      <option name="METHOD_NAME" value="detectivePlayerSecondMove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DetectivePlayerTest.xyz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
-      <option name="METHOD_NAME" value="TestWhenCheatPlayerMatchWithCooperatePlayer" />
+      <option name="MAIN_CLASS_NAME" value="DetectivePlayerTest" />
+      <option name="METHOD_NAME" value="xyz" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DetectivePlayerTest.xyzxz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
-      <option name="METHOD_NAME" value="TestWhenCooperatePlayerMatchWithCheatPlayer" />
+      <option name="MAIN_CLASS_NAME" value="DetectivePlayerTest" />
+      <option name="METHOD_NAME" value="xyzxz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DetectivePlayerTest.xyzxz1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionOfTrust" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DetectivePlayerTest" />
+      <option name="METHOD_NAME" value="xyzxz1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CopyKittenPlayerTest.copycatPlayerSecondMoveWithCooperatePlayer" />
-        <item itemvalue="JUnit.TrustMachineTest.TestWhenCooperatePlayerMatchWithCheatPlayer" />
-        <item itemvalue="JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCooperatePlayer" />
-        <item itemvalue="JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer" />
-        <item itemvalue="JUnit.TrustMachineTest" />
+        <item itemvalue="JUnit.DetectivePlayerTest" />
+        <item itemvalue="JUnit.DetectivePlayerTest.xyzxz1" />
+        <item itemvalue="JUnit.DetectivePlayerTest.xyzxz" />
+        <item itemvalue="JUnit.DetectivePlayerTest.xyz" />
+        <item itemvalue="JUnit.DetectivePlayerTest.detectivePlayerSecondMove" />
       </list>
     </recent_temporary>
   </component>
@@ -133,11 +162,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707150598717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented CopyKittenPlayer">
+      <option name="closed" value="true" />
+      <created>1707153865395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707153865395</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented CopyCatPlayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented CopyCatPlayer" />
+    <MESSAGE value="implemented CopyKittenPlayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented CopyKittenPlayer" />
   </component>
 </project>
