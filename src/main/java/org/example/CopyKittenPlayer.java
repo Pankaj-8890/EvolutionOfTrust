@@ -4,13 +4,15 @@ import java.awt.*;
 
 public class CopyKittenPlayer extends Player {
 
-    private boolean gainedLastRound = true;
+    private boolean gainedLastRound = false;
+
+    private boolean investLastRound = false;
 
     @Override
     public Action takeAction(){
-        Action action = Action.CHEAT;
-        if(gainedLastRound)
-            action = Action.COOPERATE;
+        Action action = Action.COOPERATE;
+        if(!gainedLastRound && investLastRound)
+            action = Action.CHEAT;
         this.gainedLastRound = false;
         return action;
     }
@@ -19,5 +21,11 @@ public class CopyKittenPlayer extends Player {
     public void gain() {
         this.gainedLastRound = true;
         super.gain();
+    }
+
+    @Override
+    public void invest() {
+        this.investLastRound = true;
+        super.invest();
     }
 }

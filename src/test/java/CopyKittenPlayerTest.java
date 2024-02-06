@@ -1,11 +1,10 @@
 import org.example.Action;
-import org.example.CopyCatPlayer;
 import org.example.CopyKittenPlayer;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class CopeKittenPlayerTest {
+public class CopyKittenPlayerTest {
     @Test
     public void TestCopyKittenPlayerIsCreated() {
         CopyKittenPlayer copyKittenPlayer = new CopyKittenPlayer();
@@ -20,7 +19,7 @@ public class CopeKittenPlayerTest {
     }
 
     @Test
-    public void TestCopyKittenPlayerActionChangeWhenLastInvestisTrue(){
+    public void TestCopyKittenPlayerActionChangeWhenLastInvestIsTrue(){
         CopyKittenPlayer copyKittenPlayer = new CopyKittenPlayer();
         copyKittenPlayer.invest();
         assertEquals(Action.CHEAT,copyKittenPlayer.takeAction());

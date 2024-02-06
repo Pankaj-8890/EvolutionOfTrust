@@ -3,12 +3,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.*;
 
 public class TrustMachineTest {
     @Test
     public void TestWhenCooperatePlayerMatchWithCheatPlayer() {
-        CooperatePlayer firstPlayer = new CooperatePlayer();
-        CheatPlayer secondPlayer = new CheatPlayer();
+        Player firstPlayer = new CooperatePlayer();
+        Player secondPlayer = new CheatPlayer();
 
         TrustMachine trustMachine = new TrustMachine(firstPlayer,secondPlayer);
         trustMachine.TrustTransaction(1);
@@ -16,8 +17,8 @@ public class TrustMachineTest {
     }
     @Test
     public void TestWhenCheatPlayerMatchWithCheatPlayer() {
-        CheatPlayer firstPlayer = new CheatPlayer();
-        CheatPlayer secondPlayer = new CheatPlayer();
+        Player firstPlayer = new CheatPlayer();
+        Player secondPlayer = new CheatPlayer();
 
         TrustMachine trustMachine = new TrustMachine(firstPlayer,secondPlayer);
         trustMachine.TrustTransaction(1);
@@ -28,8 +29,8 @@ public class TrustMachineTest {
 
     @Test
     public void TestWhenCheatPlayerMatchWithCheatPlayerin2Rounds() {
-        CheatPlayer firstPlayer = new CheatPlayer();
-        CheatPlayer secondPlayer = new CheatPlayer();
+        Player firstPlayer = new CheatPlayer();
+        Player secondPlayer = new CheatPlayer();
 
         TrustMachine trustMachine = new TrustMachine(firstPlayer,secondPlayer);
         trustMachine.TrustTransaction(2);
@@ -40,8 +41,8 @@ public class TrustMachineTest {
 
     @Test
     public void TestWhenCooperatePlayerMatchWithCooperatePlayer() {
-        CooperatePlayer firstPlayer = new CooperatePlayer();
-        CooperatePlayer secondPlayer = new CooperatePlayer();
+        Player firstPlayer = new CooperatePlayer();
+        Player secondPlayer = new CooperatePlayer();
 
         TrustMachine trustMachine = new TrustMachine(firstPlayer,secondPlayer);
         trustMachine.TrustTransaction(1);
@@ -52,8 +53,8 @@ public class TrustMachineTest {
 
     @Test
     public void TestWhenCooperatePlayerMatchWithCooperatePlayerin2Rounds() {
-        CooperatePlayer firstPlayer = new CooperatePlayer();
-        CooperatePlayer secondPlayer = new CooperatePlayer();
+        Player firstPlayer = new CooperatePlayer();
+        Player secondPlayer = new CooperatePlayer();
 
         TrustMachine trustMachine = new TrustMachine(firstPlayer,secondPlayer);
         trustMachine.TrustTransaction(2);
@@ -64,8 +65,8 @@ public class TrustMachineTest {
 
     @Test
     public void TestWhenCheatPlayerMatchWithCooperatePlayer() {
-        CheatPlayer firstPlayer = new CheatPlayer();
-        CooperatePlayer secondPlayer = new CooperatePlayer();
+        Player firstPlayer = new CheatPlayer();
+        Player secondPlayer = new CooperatePlayer();
 
         TrustMachine trustMachine = new TrustMachine(firstPlayer,secondPlayer);
         trustMachine.TrustTransaction(1);
@@ -76,14 +77,14 @@ public class TrustMachineTest {
 
     @Test
     public void TestActionWhenCopycatPlayerInitialMove() {
-        CopyCatPlayer player = new CopyCatPlayer();
+        Player player = new CopyCatPlayer();
         assertEquals(Action.CHEAT, player.takeAction());
     }
 
     @Test
     public void TestWinnerWhenCopycatPlayerMatchWithCooperatePlayerInFirstRound() {
-        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
-        CooperatePlayer cooperatePlayer = new CooperatePlayer();
+        Player copyCatPlayer = new CopyCatPlayer();
+        Player cooperatePlayer = new CooperatePlayer();
         TrustMachine trustMachine = new TrustMachine(copyCatPlayer,cooperatePlayer);
         trustMachine.TrustTransaction(1);
         assertEquals(copyCatPlayer, trustMachine.getResults());
@@ -91,8 +92,8 @@ public class TrustMachineTest {
 
     @Test
     public void TestWinnerWhenCopycatPlayerMatchWithCooperatePlayerInSecondRound() {
-        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
-        CooperatePlayer cooperatePlayer = new CooperatePlayer();
+        Player copyCatPlayer = new CopyCatPlayer();
+        Player cooperatePlayer = new CooperatePlayer();
         TrustMachine trustMachine = new TrustMachine(copyCatPlayer,cooperatePlayer);
         trustMachine.TrustTransaction(2);
         assertEquals(copyCatPlayer, trustMachine.getResults());
@@ -101,8 +102,8 @@ public class TrustMachineTest {
 
     @Test
     public void TestWinnerWhenCopycatPlayerSecondMoveWithCheatPlayer() {
-        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
-        CheatPlayer cheatPlayer = new CheatPlayer();
+        Player copyCatPlayer = new CopyCatPlayer();
+        Player cheatPlayer = new CheatPlayer();
         TrustMachine trustMachine = new TrustMachine(copyCatPlayer,cheatPlayer);
         trustMachine.TrustTransaction(2);
         assertNull(trustMachine.getResults());
@@ -110,24 +111,24 @@ public class TrustMachineTest {
 
     @Test
     public void transactionBetweenCopycatAndCooperatePlayer() {
-        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
-        CooperatePlayer cooperatePlayer = new CooperatePlayer();
+        Player copyCatPlayer = new CopyCatPlayer();
+        Player cooperatePlayer = new CooperatePlayer();
         TrustMachine trustMachine = new TrustMachine(copyCatPlayer, cooperatePlayer);
         trustMachine.TrustTransaction(5);
         assertEquals(copyCatPlayer, trustMachine.getResults());
     }
 
     @Test
-    public void copycatPlayerInitialMove() {
-        CopyKittenPlayer player = new CopyKittenPlayer();
+    public void TestCopycatPlayerInitialMove() {
+        Player player = new CopyKittenPlayer();
 
         assertEquals(Action.COOPERATE, player.takeAction());
     }
 
     @Test
-    public void copycatPlayerSecondMoveWithCooperatePlayerInRound1() {
-        CopyKittenPlayer copyKittenPlayer = new CopyKittenPlayer();
-        CooperatePlayer cooperatePlayer = new CooperatePlayer();
+    public void TestCopycatPlayerSecondMoveWithCooperatePlayerInRound1() {
+        Player copyKittenPlayer = new CopyKittenPlayer();
+        Player cooperatePlayer = new CooperatePlayer();
         TrustMachine trustMachine = new TrustMachine(copyKittenPlayer, cooperatePlayer);
 
         trustMachine.TrustTransaction(1);
@@ -136,9 +137,9 @@ public class TrustMachineTest {
     }
 
     @Test
-    public void copycatPlayerSecondMoveWithCooperatePlayerInRound2() {
-        CopyKittenPlayer copyKittenPlayer = new CopyKittenPlayer();
-        CooperatePlayer cooperatePlayer = new CooperatePlayer();
+    public void TestCopycatPlayerSecondMoveWithCooperatePlayerInRound2() {
+        Player copyKittenPlayer = new CopyKittenPlayer();
+        Player cooperatePlayer = new CooperatePlayer();
         TrustMachine trustMachine = new TrustMachine(copyKittenPlayer, cooperatePlayer);
 
         trustMachine.TrustTransaction(2);
@@ -147,14 +148,68 @@ public class TrustMachineTest {
     }
 
     @Test
-    public void copycatPlayerSecondMoveWithCheatPlayer() {
-        CopyKittenPlayer copyKittenPlayer = new CopyKittenPlayer();
-        CheatPlayer cheatPlayer = new CheatPlayer();
+    public void TestcopycatPlayerSecondMoveWithCheatPlayer() {
+        Player copyKittenPlayer = new CopyKittenPlayer();
+        Player cheatPlayer = new CheatPlayer();
         TrustMachine trustMachine = new TrustMachine(copyKittenPlayer, cheatPlayer);
 
         trustMachine.TrustTransaction(2);
 
         assertEquals(cheatPlayer, trustMachine.getResults());
+    }
+
+
+    @Test
+    public void TestExpectDetectivePlayerToCheatInRound3() {
+        Player detectivePlayer = new DetectivePlayer();
+        Player cooperatePlayer = new CooperatePlayer();
+        TrustMachine trustMachine = new TrustMachine(detectivePlayer, cooperatePlayer);
+
+        trustMachine.TrustTransaction(3);
+
+        assertEquals(detectivePlayer, trustMachine.getResults());
+    }
+
+    @Test
+    public void TestExpectDetectivePlayerToCheatInRound3WithCheatPlayer() {
+        Player detectivePlayer = spy( new DetectivePlayer());
+        Player cheatPlayer = spy(new CheatPlayer());
+        TrustMachine trustMachine = new TrustMachine(detectivePlayer, cheatPlayer);
+
+        trustMachine.TrustTransaction(3);
+
+        verify(detectivePlayer, times(1)).invest();
+        verify(detectivePlayer, times(0)).gain();
+        verify(cheatPlayer, times(0)).invest();
+        verify(cheatPlayer, times(1)).gain();
+    }
+
+    @Test
+    public void expectDetectivePlayerToCheatInRound4WithCopyCatPlayer() {
+        Player detectivePlayer = spy( new DetectivePlayer());
+        Player copyCatPlayer = spy(new CopyCatPlayer());
+        TrustMachine trustMachine = new TrustMachine(detectivePlayer, copyCatPlayer);
+
+        trustMachine.TrustTransaction(4);
+
+        verify(detectivePlayer, times(2)).invest();
+        verify(detectivePlayer, times(2)).gain();
+        verify(copyCatPlayer, times(2)).invest();
+        verify(copyCatPlayer, times(2)).gain();
+    }
+
+    @Test
+    public void detectivePlayerTransactionWithCopyKittenPlayer() {
+        Player detectivePlayer = spy(new DetectivePlayer());
+        Player copyKitten = spy(new CopyKittenPlayer());
+        TrustMachine trustMachine = new TrustMachine(detectivePlayer, copyKitten);
+
+        trustMachine.TrustTransaction(4);
+
+        verify(detectivePlayer, times(2)).gain();
+        verify(detectivePlayer, times(1)).invest();
+        verify(copyKitten, times(2)).invest();
+        verify(copyKitten, times(1)).gain();
     }
 
 }

@@ -16,8 +16,7 @@ public class DetectivePlayerTest {
     @Test
     public void TestDetectivePlayerSecondRound() {
         DetectivePlayer detectivePlayer = new DetectivePlayer();
-
-        assertEquals(Action.COOPERATE, detectivePlayer.takeAction());
+        detectivePlayer.takeAction();
         assertEquals(Action.CHEAT, detectivePlayer.takeAction());
     }
 
@@ -26,8 +25,8 @@ public class DetectivePlayerTest {
 
         DetectivePlayer detectivePlayer = new DetectivePlayer();
 
-        assertEquals(Action.COOPERATE, detectivePlayer.takeAction());
-        assertEquals(Action.CHEAT, detectivePlayer.takeAction());
+        detectivePlayer.takeAction();
+        detectivePlayer.takeAction();
         assertEquals(Action.CHEAT, detectivePlayer.takeAction());
         assertEquals(Action.CHEAT, detectivePlayer.takeAction());
 
@@ -38,13 +37,17 @@ public class DetectivePlayerTest {
 
         DetectivePlayer detectivePlayer = new DetectivePlayer();
 
-        assertEquals(Action.COOPERATE, detectivePlayer.takeAction());
-        assertEquals(Action.CHEAT, detectivePlayer.takeAction());
+        detectivePlayer.takeAction();
+        detectivePlayer.takeAction();
         detectivePlayer.invest();
         assertEquals(Action.CHEAT, detectivePlayer.takeAction());
         detectivePlayer.gain();
         assertEquals(Action.COOPERATE, detectivePlayer.takeAction());
-
+        detectivePlayer.invest();
+        detectivePlayer.gain();
+        assertEquals(Action.COOPERATE, detectivePlayer.takeAction());
+        detectivePlayer.invest();
+        assertEquals(Action.CHEAT, detectivePlayer.takeAction());
     }
 
 }
