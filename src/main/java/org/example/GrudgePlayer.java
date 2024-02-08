@@ -19,6 +19,11 @@ public class GrudgePlayer extends Player{
     }
 
     @Override
+    public Player clone() {
+        return new GrudgePlayer();
+    }
+
+    @Override
     public void invest() {
         cheatCount++;
         super.invest();

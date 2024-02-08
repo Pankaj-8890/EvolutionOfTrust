@@ -5,4 +5,9 @@ public class CooperatePlayer extends Player{
     public Action takeAction(){
         return Action.COOPERATE;
     }
+
+    @Override
+    public Player clone() {
+        return new CooperatePlayer();
+    }
 }

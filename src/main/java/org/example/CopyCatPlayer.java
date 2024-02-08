@@ -15,6 +15,11 @@ public class CopyCatPlayer extends Player{
     }
 
     @Override
+    public Player clone() {
+        return new CopyCatPlayer();
+    }
+
+    @Override
     public void gain(){
         this.gainLastRound = true;
         super.gain();

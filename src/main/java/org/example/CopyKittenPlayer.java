@@ -18,6 +18,11 @@ public class CopyKittenPlayer extends Player {
     }
 
     @Override
+    public Player clone() {
+        return new CopyKittenPlayer();
+    }
+
+    @Override
     public void gain() {
         this.gainedLastRound = true;
         super.gain();

@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f583892f-11d2-4307-ae63-dc505132e951" name="Changes" comment="implemented detectivePlayer">
+    <list default="true" id="f583892f-11d2-4307-ae63-dc505132e951" name="Changes" comment="implemented detectivePlayer UT">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Tournament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TournamentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CheatPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CheatPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CooperatePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CooperatePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CopyCatPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyCatPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CopyKittenPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CopyKittenPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DetectivePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DetectivePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CopeKittenPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CopyKittenPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DetectivePlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DetectivePlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TrustMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TrustMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GrudgePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GrudgePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +69,13 @@
     "JUnit.GrudgePlayerTest.expectCooperateAsChoiceAfterOneGainAndInvest.executor": "Run",
     "JUnit.PlayerTest.TestPlayerIsCreated.executor": "Run",
     "JUnit.PlayerTest.executor": "Run",
+    "JUnit.TournamentTest.TestAllPlayerAreNotSameInTournament.executor": "Run",
+    "JUnit.TournamentTest.TestAtTheEndOfTournamentAllPlayerShouldBeSame.executor": "Run",
+    "JUnit.TournamentTest.TestAtTheEndOfTournamentCheatWillWin.executor": "Run",
+    "JUnit.TournamentTest.TestStartTournamentBetween3players.executor": "Run",
+    "JUnit.TournamentTest.TestTournamentWhenThereIs1CheatPlayerAreNotSameInTournament.executor": "Run",
+    "JUnit.TournamentTest.allPlayerAreSameInTournament.executor": "Run",
+    "JUnit.TournamentTest.atTheEndOfTournamentAllPlayerShouldBeSame.executor": "Run",
     "JUnit.TrustMachineTest.TestExpectDetectivePlayerToCheatInRound3.executor": "Run",
     "JUnit.TrustMachineTest.TestExpectDetectivePlayerToCheatInRound3WithCheatPlayer.executor": "Run",
     "JUnit.TrustMachineTest.TestWhenCheatPlayerMatchWithCheatPlayer.executor": "Run",
@@ -85,53 +95,57 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "ab0a822a",
+    "git-widget-placeholder": "e0d53a92",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/pankaj.kumar09_ftc/IdeaProjects/EvolutionOfTrust/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in EvolutionOfTrust">
-    <configuration name="All in EvolutionOfTrust" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TournamentTest.TestAtTheEndOfTournamentCheatWillWin">
+    <configuration name="TournamentTest.TestAllPlayerAreNotSameInTournament" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CopyKittenPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionOfTrust" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CopyKittenPlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrustMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionOfTrust" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrustMachineTest.TestExpectDetectivePlayerToCheatInRound3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionOfTrust" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
-      <option name="METHOD_NAME" value="TestExpectDetectivePlayerToCheatInRound3" />
+      <option name="MAIN_CLASS_NAME" value="TournamentTest" />
+      <option name="METHOD_NAME" value="TestAllPlayerAreNotSameInTournament" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrustMachineTest.detectivePlayerTransactionWithCopyKittenPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TournamentTest.TestAtTheEndOfTournamentAllPlayerShouldBeSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionOfTrust" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrustMachineTest" />
-      <option name="METHOD_NAME" value="detectivePlayerTransactionWithCopyKittenPlayer" />
+      <option name="MAIN_CLASS_NAME" value="TournamentTest" />
+      <option name="METHOD_NAME" value="TestAtTheEndOfTournamentAllPlayerShouldBeSame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TournamentTest.TestAtTheEndOfTournamentCheatWillWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionOfTrust" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TournamentTest" />
+      <option name="METHOD_NAME" value="TestAtTheEndOfTournamentCheatWillWin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TournamentTest.TestTournamentWhenThereIs1CheatPlayerAreNotSameInTournament" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionOfTrust" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TournamentTest" />
+      <option name="METHOD_NAME" value="TestTournamentWhenThereIs1CheatPlayerAreNotSameInTournament" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TournamentTest.atTheEndOfTournamentAllPlayerShouldBeSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionOfTrust" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TournamentTest" />
+      <option name="METHOD_NAME" value="atTheEndOfTournamentAllPlayerShouldBeSame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,13 +153,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in EvolutionOfTrust" />
-        <item itemvalue="JUnit.TrustMachineTest" />
-        <item itemvalue="JUnit.TrustMachineTest.TestExpectDetectivePlayerToCheatInRound3" />
-        <item itemvalue="JUnit.TrustMachineTest.detectivePlayerTransactionWithCopyKittenPlayer" />
-        <item itemvalue="JUnit.CopyKittenPlayerTest" />
+        <item itemvalue="JUnit.TournamentTest.TestAtTheEndOfTournamentCheatWillWin" />
+        <item itemvalue="JUnit.TournamentTest.TestAtTheEndOfTournamentAllPlayerShouldBeSame" />
+        <item itemvalue="JUnit.TournamentTest.TestAllPlayerAreNotSameInTournament" />
+        <item itemvalue="JUnit.TournamentTest.atTheEndOfTournamentAllPlayerShouldBeSame" />
+        <item itemvalue="JUnit.TournamentTest.TestTournamentWhenThereIs1CheatPlayerAreNotSameInTournament" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -180,13 +201,33 @@
       <option name="project" value="LOCAL" />
       <updated>1707213283466</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented detectivePlayer UT">
+      <option name="closed" value="true" />
+      <created>1707232705603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707232705603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented CopyCatPlayer" />
     <MESSAGE value="implemented CopyKittenPlayer" />
     <MESSAGE value="implemented detectivePlayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented detectivePlayer" />
+    <MESSAGE value="implemented detectivePlayer UT" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented detectivePlayer UT" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Tournament.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

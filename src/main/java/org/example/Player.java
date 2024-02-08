@@ -26,6 +26,10 @@ public class Player{
         return this.score;
     }
 
+    public Player clone(){
+        return new Player();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

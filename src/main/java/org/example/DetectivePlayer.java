@@ -31,6 +31,12 @@ public class DetectivePlayer extends CopyCatPlayer{
         }
         return action;
     }
+
+    @Override
+    public Player clone() {
+        return new DetectivePlayer();
+    }
+
     @Override
     public void gain(){
         this.gainLastRound = true;

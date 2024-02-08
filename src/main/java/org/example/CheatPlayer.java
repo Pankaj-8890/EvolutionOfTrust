@@ -6,4 +6,9 @@ public class CheatPlayer extends Player{
     public Action takeAction(){
         return Action.CHEAT;
     }
+
+    @Override
+    public CheatPlayer clone(){
+        return new CheatPlayer();
+    }
 }
